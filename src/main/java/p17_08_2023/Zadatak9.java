@@ -43,8 +43,8 @@ public class Zadatak9 {
         System.out.print("Broj karte koju zelis da odigras: ");
         String brojRuka = s.next();
 
-        if (znakSto.equals("srce") == znakRuka.equals("srce") || znakSto.equals("kocka") == znakRuka.equals("kocka") ||
-                znakSto.equals("list") == znakRuka.equals("list") || znakSto.equals("detelina") == znakRuka.equals("detelina")
+//        if (znakSto.equals("srce") == znakRuka.equals("srce") || znakSto.equals("kocka") == znakRuka.equals("kocka") ||
+//                znakSto.equals("list") == znakRuka.equals("list") || znakSto.equals("detelina") == znakRuka.equals("detelina")
 
     }
 }
