@@ -2,6 +2,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+p17_08_2023/Zadatak9.java
 
 ### IntelliJ IDEA ###
 .idea/
