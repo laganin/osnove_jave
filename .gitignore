@@ -2,7 +2,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-p17_08_2023/Zadatak9.java
 
 ### IntelliJ IDEA ###
 .idea/
@@ -13,6 +12,7 @@ p17_08_2023/Zadatak9.java
 *.iws
 *.iml
 *.ipr
+src/main/java/p17_08_2023/Zadatak9.java
 
 ### Eclipse ###
 .apt_generated
