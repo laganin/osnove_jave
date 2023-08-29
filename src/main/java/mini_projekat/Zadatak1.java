@@ -1,6 +1,5 @@
 package mini_projekat;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Zadatak1 {
