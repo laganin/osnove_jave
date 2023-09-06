@@ -133,15 +133,15 @@ public class Zadatak5_1 {
     }
 
     public static String generisiPassword(int a, boolean b) {
+        String generisiPassword ="";
         for (int i = 0; i < a; i++) {
             String randomKarakter = generisiRandomKarakter();
             String randomSpecijalniKarakter = generisiRandomSpecijalniKarakter();
-            String generisiPassword = randomKarakter;
+            generisiPassword = generisiPassword + randomKarakter;
             if (b == true && i == a - 1) {
                 generisiPassword = generisiPassword.replace(randomKarakter, randomSpecijalniKarakter);
             }
-            return (generisiPassword);
         }
-        return null;
+        return (generisiPassword);
     }
 }

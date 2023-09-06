@@ -32,20 +32,21 @@ public class Zadatak5 {
 //Generisan password: eCxdwEeFEx
 
         Scanner s = new Scanner(System.in);
+        String password = "";
 
-        System.out.print("Unesite dužinu passworda: ");
+                System.out.print("Unesite dužinu passworda: ");
         int duzinaPassworda = s.nextInt();
         System.out.print("Da li želite da sadrži specijalan karakter (true/false): ");
         boolean specijalniKarakter = s.nextBoolean();
         for (int i = 0; i < duzinaPassworda; i++) {
             String randomKarakter = generisiRandomKarakter();
             String randomSpecijalniKarakter = generisiRandomSpecijalniKarakter();
-            String password = randomKarakter;
+            password = password + randomKarakter;
             if (specijalniKarakter == true && i == duzinaPassworda - 1) {
                 password = password.replace(randomKarakter, randomSpecijalniKarakter);
             }
-            System.out.print("Generisan password: " + password);
         }
+        System.out.print("Generisan password: " + password);
     }
 
     public static String generisiRandomKarakter() {
