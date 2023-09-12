@@ -16,9 +16,9 @@ public class YouTubePlayer {
 
     public void loadVideo(Video video) {
         this.videoInfo = video;
-        int views = video.getViews();
+        this.videoInfo.addView();
         this.currentTime = 0;
-        views = views + 1;
+
     }
 //
     public void increaseVolume() {
