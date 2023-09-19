@@ -1,10 +1,10 @@
-package p15_09_2023;
+package p15_09_2023.Zadatak2;
 
 public class MasterCard extends PaymentCard {
 
 
-    public MasterCard(double balance, String number, int exirationYear, int exirationMonth) {
-        super(balance, number, exirationYear, exirationMonth);
+    public MasterCard(double balance, String number, int expirationYear, int expirationMonth) {
+        super(balance, number, expirationYear, expirationMonth);
     }
 
     @Override

@@ -1,4 +1,6 @@
-package p15_09_2023;
+package p18_09_2023.Zadatak1;
+
+import p15_09_2023.Zadatak2.PaymentCard;
 
 public class VisaCard extends PaymentCard {
     private String authorizedPerson;
@@ -12,24 +14,25 @@ public class VisaCard extends PaymentCard {
     }
 
     public VisaCard(int balance, String number, int expirationYear, int expirationMonth, String authorizedPerson) {
-        super (balance,number, expirationYear, expirationMonth);
+        super(balance, number, expirationYear, expirationMonth);
         this.authorizedPerson = authorizedPerson;
     }
 
     @Override
-    public void transaction (double amount){
-        double provizija = amount*0.018;
-        if (provizija<4){
-            provizija=4;
+    public void transaction(double amount) {
+        double commission = amount * 0.018;
+        if (commission < 4) {
+            commission = 4;
         }
-        amount = amount + provizija;
+        amount = amount + commission;
         super.transaction(amount);
+        this.balance -= amount;
     }
 
     @Override
-    public void print (){
+    public void print() {
         System.out.print("Visa Card: ");
-        super.print();
+        System.out.println(this.number + ", " + this.expirationMonth + "/" + this.expirationYear + ", $" + this.balance);
     }
 
 }
