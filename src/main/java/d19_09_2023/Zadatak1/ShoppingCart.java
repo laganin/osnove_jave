@@ -1,4 +1,4 @@
-package d19_09_2023;
+package d19_09_2023.Zadatak1;
 
 import java.util.ArrayList;
 
@@ -31,22 +31,15 @@ public class ShoppingCart {
     }
 
 
-    private ArrayList<Double> priceWithDiscount(double discount) {
-        ArrayList<Double> prices = new ArrayList<>();
+    private double priceWithDiscount(double discount) {
+        double total = 0;
         for (int i = 0; i < this.packs.size(); i++) {
-            double discountedPrice = this.packs.get(i).price() - discount;
-            prices.add(discountedPrice);
+            total += this.packs.get(i).price();
         }
-        return prices;
+        return total - discount;
     }
 
     public double totalPrice(SuperCard x) {
-        double total = 0;
-        ArrayList<Double> prices;
-        prices = priceWithDiscount(x.getDiscount());
-        for (int i = 0; i < prices.size(); i++) {
-            total = total + prices.get(i);
-        }
-        return total;
+      return this.priceWithDiscount(x.getDiscount());
     }
 }

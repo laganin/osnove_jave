@@ -1,4 +1,4 @@
-package d19_09_2023;
+package d19_09_2023.Zadatak1;
 
 public class TetraPak extends Packaging {
 
